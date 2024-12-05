@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dégradé en fond -->
+    <gradient
+        android:startColor="@color/primary"
+        android:endColor="@color/secondary"
+        android:angle="45" /> <!-- Dégradé de 45 degrés -->
+
+    <!-- Coins arrondis -->
+    <corners android:radius="16dp" /> <!-- Coins arrondis -->
+
+    <!-- Padding pour l'ombre -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>

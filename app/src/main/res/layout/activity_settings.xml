@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Titre des paramètres -->
+    <TextView
+        android:id="@+id/textSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Settings"
+        android:textColor="@color/fire"
+        android:textSize="40sp"
+        android:layout_marginTop="48dp" />
+
+    <!-- Bouton pour revenir à la page d'accueil -->
+    <Button
+        android:id="@+id/buttonBackToHome"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="640dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonFriendlyMode"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="560dp"
+        android:text="Friendly Mode"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:textSize="16sp" />
+</FrameLayout>

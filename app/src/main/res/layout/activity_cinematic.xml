@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <!-- FrameLayout to overlay text on top of the image -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Image View to display the slideshow -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/cinematic_image"
+            android:scaleType="centerCrop" />
+
+        <!-- TextView to display the text for each slide at the bottom -->
+        <TextView
+            android:id="@+id/slideTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:fontFamily="@font/ai"
+            android:textColor="@color/white"
+            android:paddingBottom="50dp"
+            android:paddingHorizontal="30dp"
+            android:textSize="25dp"/>
+
+    </FrameLayout>
+
+    <!-- Button that activates after the last image -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:enabled="false"
+        style="@style/CustomButtonStyle" />
+</LinearLayout>

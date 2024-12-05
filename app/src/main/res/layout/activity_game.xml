@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FAFAFA">
+
+    <!-- Image de fond -->
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Texte du score -->
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Score: 0"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Texte du temps restant -->
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="Time: 00:00"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        />
+
+    <!-- Liste des mots -->
+    <FrameLayout
+        android:id="@+id/wordsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00D91313"
+        android:visibility="visible" />
+</FrameLayout>
